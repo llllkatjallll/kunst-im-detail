@@ -1,4 +1,4 @@
-import { Behaviour, GameObject, serializeable } from "@needle-tools/engine";
+import { Animator, Behaviour, GameObject, serializeable } from "@needle-tools/engine";
 
 // Documentation → https://docs.needle.tools/scripting
 
@@ -26,7 +26,13 @@ export class Infopoint extends Behaviour {
         for(let x = 0; x < this.gameObject.children.length; x++){
             GameObject.setActive(this.gameObject.children[x], false);
         }
-        GameObject.setActive(this.gameObject.children[this.currentId], true);
+        const selectedObject = this.gameObject.children[this.currentId]
+        GameObject.setActive(selectedObject, true);
+
+        //activate Animator
+        const selectedAnimator = GameObject.getComponentInChildren(selectedObject,Animator);
+        selectedAnimator?.SetTrigger("show");
+
        // 
     }
 

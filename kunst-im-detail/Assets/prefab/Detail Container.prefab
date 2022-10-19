@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9014555129710981904}
   - component: {fileID: 554380782893406924}
   - component: {fileID: 3354385205629521120}
+  - component: {fileID: 8834436367322142426}
   m_Layer: 0
   m_Name: Detail Container
   m_TagString: Untagged
@@ -99,6 +100,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 6622784779019131474}
   object: {fileID: 7182864811684200804}
+--- !u!114 &8834436367322142426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7367694052452707064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1822f1751a4acabd7c1dba099b6b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8509234523651229635
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,10 +124,10 @@ GameObject:
   - component: {fileID: 2503018389708528829}
   - component: {fileID: 6245191525176530698}
   - component: {fileID: 5339233138682086538}
-  - component: {fileID: 4720284939335108633}
   - component: {fileID: 3099851394762503189}
   - component: {fileID: 3895219953758612977}
   - component: {fileID: 995295629315091562}
+  - component: {fileID: 3648179256541926574}
   m_Layer: 0
   m_Name: Detail
   m_TagString: Untagged
@@ -201,82 +214,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detailId: 0
   infopointObject: {fileID: 0}
---- !u!114 &4720284939335108633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8509234523651229635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90522fc79517459a92915e809fe9c0d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TriggerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  OnEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5339233138682086538}
-        m_TargetAssemblyTypeName: Needle.Typescript.GeneratedComponents.detailInfo,
-          NewAssembly
-        m_MethodName: shareId
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Needle.Typescript.GeneratedComponents.Infopoint,
-          NewAssembly
-        m_MethodName: showInfo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Needle.Typescript.GeneratedComponents.Infopoint,
-          NewAssembly
-        m_MethodName: showCurrentModel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnExit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Needle.Typescript.GeneratedComponents.Infopoint,
-          NewAssembly
-        m_MethodName: hideAllModels
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &3099851394762503189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,3 +251,77 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4592ba8f3db243b790e0c03f28a634ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3648179256541926574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8509234523651229635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 912931be15dc9526e17999eba88cf2a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectId: 1
+  triggerMask: 0
+  onEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5339233138682086538}
+        m_TargetAssemblyTypeName: Needle.Typescript.GeneratedComponents.detailInfo,
+          NewAssembly
+        m_MethodName: shareId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onStay:
+    m_PersistentCalls:
+      m_Calls: []
+  onExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  currentIntersected: []
+  lastIntersected: []
