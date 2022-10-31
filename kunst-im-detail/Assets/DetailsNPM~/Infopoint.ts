@@ -26,7 +26,7 @@ export class Infopoint extends Behaviour {
         for(let x = 0; x < this.gameObject.children.length; x++){
             GameObject.setActive(this.gameObject.children[x], false);
         }
-        const selectedObject = this.gameObject.children[this.currentId]
+        const selectedObject = this.gameObject.children[this.currentId-1]
         GameObject.setActive(selectedObject, true);
 
         //activate Animator

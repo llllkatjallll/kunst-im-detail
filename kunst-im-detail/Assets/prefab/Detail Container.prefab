@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 3099851394762503189}
   - component: {fileID: 3895219953758612977}
   - component: {fileID: 995295629315091562}
-  - component: {fileID: 3648179256541926574}
+  - component: {fileID: 7216939861409335228}
   m_Layer: 0
   m_Name: Detail
   m_TagString: Untagged
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4592ba8f3db243b790e0c03f28a634ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3648179256541926574
+--- !u!114 &7216939861409335228
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,12 +260,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8509234523651229635}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 912931be15dc9526e17999eba88cf2a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 90522fc79517459a92915e809fe9c0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectId: 1
-  triggerMask: 0
-  onEnter:
+  TriggerMask:
+    serializedVersion: 2
+    m_Bits: 2147483647
+  OnEnter:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5339233138682086538}
@@ -281,47 +282,48 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 8509234523651229635}
+        m_TargetAssemblyTypeName: Needle.Typescript.GeneratedComponents.Infopoint,
+          NewAssembly
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+        m_TargetAssemblyTypeName: Needle.Typescript.GeneratedComponents.Infopoint,
+          NewAssembly
+        m_MethodName: showCurrentModel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onStay:
+  OnStay:
     m_PersistentCalls:
       m_Calls: []
-  onExit:
+  OnExit:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+        m_TargetAssemblyTypeName: Needle.Typescript.GeneratedComponents.Infopoint,
+          NewAssembly
+        m_MethodName: hideAllModels
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  currentIntersected: []
-  lastIntersected: []
