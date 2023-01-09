@@ -4389,6 +4389,7 @@ GameObject:
   - component: {fileID: 969208506}
   - component: {fileID: 969208507}
   - component: {fileID: 969208508}
+  - component: {fileID: 969208509}
   m_Layer: 0
   m_Name: Content
   m_TagString: Untagged
@@ -4413,14 +4414,14 @@ Transform:
   - {fileID: 405594349}
   - {fileID: 1609064307}
   - {fileID: 219327690}
-  - {fileID: 1873021426}
   - {fileID: 2037216060}
+  - {fileID: 1873021426}
+  - {fileID: 1970453504}
   - {fileID: 1561800347}
   - {fileID: 987939945}
   - {fileID: 1924876461}
   - {fileID: 1059527649}
   - {fileID: 874732845}
-  - {fileID: 1970453504}
   - {fileID: 2075811210}
   - {fileID: 1851318615}
   m_Father: {fileID: 1597275518}
@@ -4467,6 +4468,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Needle.Engine.Components.TeleportTarget, Needle.Engine
     $ GlobalObjectId_V1-2-d541a43e59ef6e94b8483da1bfc954ea-969208508-0
+--- !u!114 &969208509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969208504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7139e2492e50b316af1ceed2ddbfabe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exportRoot: {fileID: 969208504}
 --- !u!1001 &987939944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9686,7 +9700,7 @@ RectTransform:
   - {fileID: 1621146003}
   - {fileID: 729803304}
   m_Father: {fileID: 969208505}
-  m_RootOrder: 12
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 76.45, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10096,7 +10110,7 @@ Transform:
   - {fileID: 2082645445}
   - {fileID: 1927694709}
   m_Father: {fileID: 969208505}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2037216061
 MonoBehaviour:
